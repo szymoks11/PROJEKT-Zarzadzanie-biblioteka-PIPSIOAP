@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow: hidden;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+.parent {
+	background-color: #5c5a5a;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+table {
+	margin-right: 50px;
+	margin-left: -200px;
+	color: whitesmoke;
+}
+
+tbody {
+	margin-left: 550px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 6;
+}
+
+.div2 {
+	grid-area: 2 / 1 / 6 / 2;
+}
+
+.div3 {
+	grid-area: 5 / 5 / 5 / 6;
+}
+
+.div4 {
+	grid-area: 2 / 2 / 6 / 5;
+}
+
+.headerInfo {
+	margin-top: 300px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #4d608a;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #c66f0b;
+	border-radius: 2px;
+}
+
+nav {
+	animation: navbar 1s ease 1500ms;
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #142361;
+	border-bottom: 2px solid #4d608a;
+	transition: 0.5s all ease-in-out;
+}
+
+.brand-logo {
+	font-size: 2.5rem;
+	margin-left: 50px;
+	width: 250px;
+	font-family: "Pacifico", cursive;
+	text-decoration: none;
+	color: #142361;
+	margin-right: 50px;
+	margin-left: -5px;
+}
+
+.links {
+	width: 400px;
+	display: flex;
+	font-size: 1.5rem;
+	font-weight: 500;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.5s all ease-in-out;
+	color: #1b336f;
+
+}
+
+.links a {
+	color: #1b336f;
+	text-decoration: none;
+	margin-right: -200px;
+}
+
+.link {
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: #c08036;
+}
+
+.admin_panel {
+	margin-left: 1100px;
+	margin-top: -300px;
+	display: inline-block;
+}
+
+.headerContainer {
+	height: 100vh;
+	background-size: minmax(cover, 250%);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.headerWrapper {
+	height: 100vh;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+
+.headerInfo {
+	width: 40%;
+}
+
+.headerTitle {
+	font-size: 2.5rem;
+	margin-top: -625px;
+	margin-left: -200px;
+	font-weight: 600;
+	background: #1b336f;
+	background: -webkit-linear-gradient(to right, #1b336f 0%, #0f1d57 100%);
+	background: -moz-linear-gradient(to right, #1b336f 0%, #0f1d57 100%);
+	background: linear-gradient(to right, #1b336f 0%, #0f1d57 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 30px;
+}
+
+main {
+	background: #091442;
+	color: white;
+}
+
+.mainContact {
+	text-align: center;
+}
+
+.form_add .input,
+.form_add .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	align-self: center;
+}
+
+.form_add .input {
+	margin-bottom: 20px;
+}
+
+.form_add .button button {
+	padding: 10px;
+	border-style: none;
+	background-color: #c66f0b;
+	border-radius: 5px;
+	color: white;
+	transition: 0.4s;
+}
+
+.form_add .button button:hover {
+	opacity: 0.8;
+}
+
+.info {
+	background: #ca7717;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 200px;
+}
+
+.info p {
+	color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+}
+
+.form_input {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+.form_input::placeholder {
+	color: transparent;
+}
+
+.form_input::placeholder-shown .form__label {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px;
+}
+
+
+.contactOption img {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}

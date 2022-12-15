@@ -1,0 +1,220 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	padding: 16px;
+	background-color: #2c3338;
+	background-position: center center, center, center;
+	background-attachment: fixed, fixed;
+	background-size: auto, cover;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font: 16px/24px normal "Open Sans", trebuchet, sans-serif;
+	font-weight: 100;
+	background-color: #2c3338;
+	color: white;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-top: 0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 21px;
+}
+
+#thead {
+	background-color: #26a2af
+}
+
+a {
+	text-decoration: none !important;
+	color: white;
+}
+
+.usun {
+	color: black;
+	margin-left: 10px;
+}
+
+td.tytul {
+	margin-right: 15px;
+}
+
+td.autor {
+	margin-right: 50px;
+}
+
+td {
+	margin-left: 50px;
+}
+
+.table {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.brick {
+	display: inline-block;
+	width: 100%;
+	padding: 16px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	background-color: #e7e7e7;
+	vertical-align: top;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header>hgroup {
+	margin-bottom: 32px;
+	color: #fff;
+}
+
+header h1 {
+	margin-bottom: 0;
+	font-size: 28px;
+}
+
+header a {
+	color: #d44179;
+}
+
+nav {
+	margin-bottom: 32px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a.text.leave {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a.brick {
+	position: relative;
+	font-family: inherit;
+	font-weight: inherit;
+	color: #616161;
+	color: #2c3338;
+	line-height: 2;
+	background-color: #2c3338;
+	background-color: #F3F3F3;
+	background-color: #e7e7e7;
+	border-left: 3px solid #616161
+}
+
+nav ul li a.brick .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 64px;
+	width: 64px;
+	font-size: 2em;
+	color: #fff;
+	line-height: 2.25;
+	background: #616161;
+}
+
+nav ul li a.dashboard {
+	border-color: #34ABD7;
+}
+
+nav ul li a.dashboard .icon {
+	background-color: #34ABD7;
+}
+
+nav ul li a.pages {
+	border-color: #d44179;
+}
+
+nav ul li a.pages .icon {
+	background-color: #d44179;
+}
+
+
+#content>header {
+	position: relative;
+	padding: 0px 72px 0px 0px;
+}
+
+#content .brick {
+	position: relative;
+}
+
+
+@media all and (max-width: 799px) {
+
+	#content.pages .brick.close .text,
+	#content.pages .brick.save .text {
+		display: none;
+	}
+}
+
+@media all and (min-width: 800px) {
+	header>hgroup {
+		height: 120px;
+		color: #fff;
+	}
+
+
+	nav {
+		position: absolute;
+		width: 250px;
+	}
+
+
+	#content.pages .brick.save {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 0;
+		color: #fff;
+		background: #34ABD7;
+		height: 56px;
+		min-height: 56px;
+		width: 120px;
+	}
+
+	#content.pages .brick.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 120px;
+		height: 56px;
+		min-height: 56px;
+		margin-right: 0;
+		color: #fff;
+		background: #d44179;
+	}
+
+
+}
